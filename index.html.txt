@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Aspirants</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Success Aspirants</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#upload">Upload Material</a>
+        <a href="#notifications">Notifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h2>आपकी सफलता का साथी!</h2>
+        <p>Success Aspirants के साथ exam तैयारी करें, notes शेयर करें और सबसे तेज updates पाएं।</p>
+        <a class="btn" href="#upload">Upload Material</a>
+      </div>
+      <img src="images/hero.webp" alt="Students studying illustration">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="content">
+    <div class="container">
+      <h3>About Success Aspirants</h3>
+      <p>हम छात्रों के लिए एक complete platform हैं, जहां study material साझा किया जा सकता है और motivational resources मिलते हैं।</p>
+    </div>
+  </section>
+
+  <!-- Upload Material Section -->
+  <section id="upload" class="content">
+    <div class="container">
+      <h3>Upload Material</h3>
+      <form>
+        <p><label>नाम: <input type="text" name="name" placeholder="आपका नाम"></label></p>
+        <p><label>Email: <input type="email" name="email" placeholder="आपका ईमेल"></label></p>
+        <p><label>Upload File: <input type="file" name="file"></label></p>
+        <p><button type="submit">Upload</button></p>
+      </form>
+      <p class="note">*यह form केवल design है, backend functionality बाद में जोड़ें।</p>
+    </div>
+  </section>
+
+  <!-- Notifications Section -->
+  <section id="notifications" class="content">
+    <div class="container">
+      <h3>Notifications</h3>
+      <ul class="notifications-list">
+        <li>नई PDF नोट्स अपलोड की गई – 10 जनवरी 2026</li>
+        <li>Exam Tips & Tricks guide जारी की गई – 12 जनवरी 2026</li>
+        <li>Motivational Webinar: 15 जनवरी 2026</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="content">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <form>
+        <p><label>नाम: <input type="text" name="name" placeholder="आपका नाम"></label></p>
+        <p><label>Email: <input type="email" name="email" placeholder="आपका ईमेल"></label></p>
+        <p><label>Message: <textarea name="message" placeholder="आपका संदेश"></textarea></label></p>
+        <p><button type="submit">Send</button></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Success Aspirants. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

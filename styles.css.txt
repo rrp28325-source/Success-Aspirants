@@ -1,0 +1,30 @@
+root{
+  --accent#ff5722;
+  --bg#fff;
+  --text#222;
+  --muted#555;
+  --max-width1100px;
+}
+
+{box-sizingborder-box;margin0;padding0}
+body{font-familysystem-ui,-apple-system,Segoe UI,Roboto,Noto Sans,sans-serif;colorvar(--text);backgroundvar(--bg);line-height1.6}
+.container{max-widthvar(--max-width);margin0 auto;padding1rem}
+.site-header{background#f6f6f6;border-bottom1px solid #ddd}
+.site-header .container{displayflex;align-itemscenter;justify-contentspace-between;flex-wrapwrap}
+.logo{font-weight700;font-size1.5rem}
+.nav a{margin-left1rem;text-decorationnone;colorinherit;font-weight500}
+.hero{padding3rem 0;background#ffece6;border-radius12px;margin-bottom2rem}
+.hero-grid{displaygrid;grid-template-columns1fr 400px;gap2rem;align-itemscenter}
+.hero img{width100%;border-radius12px}
+.btn{displayinline-block;padding.7rem 1.2rem;border-radius8px;backgroundvar(--accent);color#fff;text-decorationnone;margin-top1rem;font-weight600}
+.content{padding2rem 0}
+form input, form textarea{width100%;padding.5rem;margin.3rem 0;border1px solid #ccc;border-radius6px}
+form button{padding.6rem 1.2rem;backgroundvar(--accent);color#fff;bordernone;border-radius6px;cursorpointer;font-weight600}
+.notifications-list{list-styledisc;margin-left1.5rem;colorvar(--muted)}
+.site-footer{padding1rem 0;border-top1px solid #ddd;text-aligncenter;font-size.9rem;colorvar(--muted)}
+
+@media (max-width900px){
+  .hero-grid{grid-template-columns1fr;text-aligncenter}
+  .site-header .container{flex-directioncolumn;gap.5rem}
+  .nav a{margin-left0;margin-right.5rem}
+}
